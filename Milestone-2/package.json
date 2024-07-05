@@ -1,0 +1,17 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "An intelligent load balancer for multi-API management",
+  "main": "load-balancer.js",
+  "scripts": {
+    "start": "node load-balancer.js",
+    "start-rest": "node apis/rest.js",
+    "start-graphql": "node apis/graphql.js",
+    "start-grpc": "node apis/grpc.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "bullmq": "^1.50.0"
+  }
+}
